@@ -31,7 +31,7 @@ export default function InputArea() {
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
             value={prompt}
-            onChange={(e) => setPrompt(e.target.value)}
+            onChange={(e : React.ChangeEvent<HTMLTextAreaElement>) => setPrompt(e.target.value)}
             spellCheck={false}
             className="resize-none border-0 bg-transparent p-4 focus-visible:ring-0 pr-24 min-h-[120px] max-h-[200px] overflow-y-auto text-gray-300 placeholder:text-gray-300 custom-scroll"
             placeholder={placeholder}
